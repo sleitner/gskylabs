@@ -1,0 +1,530 @@
+\documentclass[12pt]{article}
+%\documentclass[12pt,preprint]{aastex}
+%\usepackage{smsections}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\textwidth = 6.5 in
+\textheight = 9 in
+\oddsidemargin = 0.0 in
+\evensidemargin = 0.0 in
+\topmargin = -.3in
+\headheight = 1ex
+\headsep = 4ex
+\parskip = 0.2in
+\parindent = 0.0in
+\title{Simple Lenses and Telescopes}
+\begin{document}
+
+\vspace*{-.8in}
+\markright{\tiny \rm PS12000 W2009 V1.0}
+\leftline{\tiny PS12000 W2009 V1.0}
+\vspace{.5in}
+
+\centerline{\large\bf Morphological types, spectra of galaxies,}
+\centerline{\large\bf  and the Hubble expansion law.}
+\vspace{.3in}
+
+\begin{quote}
+{\it "The history of astronomy is a history of receding horizons."}  --- Edwin Hubble
+\end{quote}
+
+\section{Introduction}
+\pagestyle{myheadings}
+\thispagestyle{plain}
+
+In 1920s the University of Chicago alumnus Edwin Hubble\footnote{You can find detailed information
+about life and work of Edwin Hubble on this website: {\tt http://www.time.com/time/time100/scientist/profile/hubble.html}} (Ph.D., 1917) solved four fundamental questions in astronomy and cosmology\footnote{See essay by Hubble's student, Alan Sandage at\\ {\tt http://antwrp.gsfc.nasa.gov/diamond$\_$jubilee/d$\_$1996/sandage$\_$hubble.html}}:
+\begin{itemize}
+\item 1922-1926. Hubble proposed a classification system for nebulae,
+both galactic (which we still call ``nebulae'') and extragalactic
+(which we know call ``galaxies''). The classification system of
+galaxies has become known as the Hubble morphological sequence of galaxy types.
+\item In 1924 Hubble decisively showed that spiral ``nebulae'' (or galaxies) are 
+huge ``island universes'' of stars similar to our own Milky Way, 
+with his discovery of Cepheids in nearby galaxies NGC 6822, M33 and M31 
+(The Andromeda galaxy) which allowed to measure distances to them.
+
+\item Having established the fact that galaxies are distant stellar systems
+like the Milky Way, Hubble used their distribution in various areas on the sky
+to show that the overall distribution of galaxies in space on large scales is
+quite homogeneous. This was a crucial fact as it justified the cosmological 
+principle of homogeneity and isotropy used to obtain dynamical models of 
+expanding universe from the Einstein's equations of general relativity. 
+
+\item In 1929 Hubble with a lot of technical help from his assistant Milton Humason has discovered 
+linear relation between redshift of lines in galaxy spectra and their distance from the Milky Way: 
+{\it the more distant a galaxy, the greater its
+redshift.}
+ This discovery lead to the notion of
+the expanding universe and is the most fundamental discovery and observational fact that we know
+about our observable Universe.
+\end{itemize}
+In this lab we will redo (in a simplified way) the Hubble's analysis
+that resulted in the first, third, and fourth of these fundamental
+discoveries using modern tools. The lab has four parts. In the first
+part you will explore the morphological types of galaxies and the
+overall shapes and features of their spectra, including the features
+in the spectra called ``spectral lines.''  In the second part, you will
+count galaxies in randomly chosen patches of the sky to see how homogeneous
+their distribution over the sky really is. In the third part, you
+will measure the wavelengths of spectral lines in real galaxy
+spectra. To determine galaxy redshifts you will compare the measured
+redshifted galaxy lines to the laboratory measurements of the line
+wavelength on Earth.  Finally, using the apparent brightnesses of the
+brightest cluster galaxies as proxy for their distances you will plot
+your measured redshifts and distance against one another to produce
+the Hubble law, which you will use to measure the Hubble constant.
+
+
+\section*{Morphological types of galaxies}
+
+Hubble classified galaxies into a sequence, now called {\it the tuning-fork Hubble diagram} (due
+to the its ressemblance of a tuning fork viewed horizontally) based on their
+visual appearance: shape, smoothness, and presence of features such as bars and spiral arms. All this
+collectively is called ``galaxy morphology'' and classification scheme is called ``morphological 
+classification.'' Hubble has conjectured
+that the sequence represented the path of galaxy evolution. Although this was not confirmed
+by further observations, the classification is still widely used by astronomers. 
+
+Hubble's classification contains many sub-classes of galaxies\footnote{See the diagram at\\{\tt http://cas.sdss.org/dr3/en/proj/advanced/galaxies/tuningfork.asp}}, but the two main 
+classes of galaxies are the elliptical and spiral galaxies. Ellipticals tend to be
+smooth in their light distribution and roundish in their appearance. 
+Spiral galaxies tend to have features such as bars and spiral arms. 
+
+To familiarize yourself with main morphological types of galaxies, go to the Galaxy Zoo website
+at \texttt{http://www.galaxyzoo.org/Tutorial.aspx} and review Part 1 of that page.
+
+{\bf Lab tasks.} 
+{\it
+\begin{itemize}
+\item What are the typical colors of elliptical and spiral galaxies? Discuss why these classes
+of galaxies tend to have the colors they have from what you know about colors of stars. 
+\item Sketch six examples of the ellipticals and six examples of spiral galaxies in your lab report indicating their
+type (spiral or ellipticals) and providing your best guess for their sub-type according to the
+Hubble's classification (e.g., E3, Sc, SBb, etc.). It may be useful to review this portion
+of the Galaxy Zoo's website:\\ {\tt http://beta.galaxyzoo.org/howtotakepart.aspx} (see also
+the corresponding chapter of your textbook). 
+\end{itemize}
+}
+
+If you are curious and have time, explore the Galaxy Zoo website and help scientists 
+in their exploration of galaxies by performing some simple classifications in their Galaxy Analysis 
+section. 
+
+\section*{Homogeneity of galaxy distribution on the sky}
+
+Start Google Earth and click on the ``Saturn'' icon on the top
+bar which switches to the Sky portion of Google Earth\footnote{Google Sky is an extension of Google
+Earth software into the sky (the simple version of which, Google Maps,
+you probably have used to get directions, view a map, etc.).  See the
+description of Google Sky that will be distributed to you, as well
+as video introduction to Google Sky at {\tt
+earth.google.com/sky/skyedu.html}} on the lab computer (or on your
+laptop after you install Google Sky and download the SDSS Galaxy Query
+kml plugin from the directory showed to you by TA and activate the
+\texttt{SDSS Galaxy Photometric Layer} by clicking on it, make sure
+the \texttt{SDSS Galaxy Spectroscopic Layer} is turned off (by
+unchecking it). Load the kml file {\tt Hubble$\_$lab$\_$random$\_$SDSS$\_$fields.kml}. 
+
+Find the corresponding folder in the {\tt Places} window on the left
+hand side of the Sky window and click on $+$ to see the folder
+contends ({\tt field 1, field 2, ..., field 10}).  These are ten
+random locations in the area of sky covered by the Sloan Digital Sky
+Survey away from the plane of the Milky Way and in the areas devoid of
+very big bright galaxies and stars (which can block a significant part
+of the field of view).  
+
+Click on the {\tt field 1} field and the Sky
+will take you to the first field down to the zoom level at which the
+field has some approximately 5 minutes of arc size (verify that
+the label in the lower right hand
+corner of the Sky window shows number close to $0^{\circ}05'$). Please do not zoom
+in or zoom out after that. If you do or if you decided to choose your own random field (feel
+free to do so),
+please zoom again to the point when the label is as close to $0^{\circ}05'$
+as possible. This is because we want to compare counts of galaxies
+within the same area of the sky in different places, which requires
+that the size of the patch we use is the same (5 arcminutes in our
+case). Also do not resize the Google Earth window as you count galaxies
+in different fields, your counts may be affected if you resize the window. 
+
+Once the Sky finishes its zoom, wait until the SDSS Galaxy Query layer
+identifies galaxies brighter than apparent magnitude in $r$ band of $m_r=21$ in the SDSS catalog. 
+Once the layer queries the SDSS database over the internet, the galaxies
+in the field will be marked by circles. Count the number of marked 
+galaxies in the field and then click on {\tt field 2} and repeat the exercise. 
+
+For this part of the lab we need to discuss a little bit of statistics. 
+As you know, statistics is a big part of analysis of data in various 
+fields: physics, biology, economics, etc. The statistics of counts 
+of relatively small random samples of objects is typically governed 
+by what is called the Poisson distribution. For example, if galaxies
+were distributed completely uniformly on the sky, we would expect that 
+the probability to find a given number of galaxies in a field of a given
+size is given by the Poisson distribution. The key feature of this 
+distribution is that if the average number of galaxies per field of 
+a given area is $\bar{N}$, the typical variation from field to field
+should be $\sqrt{\bar{N}}$. 
+
+{\bf Lab tasks.}
+{\it 
+\begin{itemize}
+\item Count the number of galaxies brighter than $m_r=21$ (the galaxies
+marked by circles) and record the number for each field. 
+\item Calculate the average number of galaxies per field using counts from all 
+ten fields. You can choose more fields of your own within the areas
+covered by the SDSS survey, just make sure that they
+are all 5 arcminutes on a side. 
+\item Compare counts in each field to the average and expected variation from field
+to field. Does it look like the distribution of galaxy counts in these fields
+is close to the Poisson distribution (i.e. distribution of galaxies on the sky
+is uniform)?
+\end{itemize} 
+}
+
+\section*{Galaxy Spectra}
+
+In Google Sky activate \texttt{SDSS Galaxy Spectroscopic Layer},
+make sure the \texttt{SDSS Galaxy Photometric Layer} is turned off. On the lowest zoom,
+find the strips of sky that were observed by the SDSS. Now zoom in and
+look for some cool nearby (i.e., bright) galaxies that have spectra available
+(circled in brown). Remember, circles are only placed around the
+brightest galaxies in your field of view, so if you'd like to check
+whether SDSS has a dim galaxy's spectrum, just zoom in on that galaxy
+until it is alone or is one of the brightest galaxies.  Find a few
+disk/spiral galaxies, and a few elliptical galaxies.  You can
+mark galaxies and go back to them later with the \texttt{placemark
+tool} (thumbtack in the top toolbar). To view their spectra click on
+the desired circled galaxies, and follow the link at the bottom of the
+popup bubble.
+
+{\bf Lab tasks.}
+{\it \begin{itemize}
+\item  Review the spectra of six elliptical and six
+spiral galaxies, observe general pattern and similarities in spectra of galaxies of either class.
+\item What is the relationship between the morphological class of a galaxy and its spectrum?
+ Sketch a typical spectrum characteristic for elliptical and spiral galaxies. 
+\item Discuss the main differences in the spectra of elliptical and spiral galaxies and give your 
+explanation for the origin of these differences. 
+\end{itemize}
+}
+
+\section*{Measuring Redshifts}
+
+
+The gas and stars in all galaxies are made of basically the
+same stuff -- the same elements and molecules -- they are just often at different density 
+and temperature, with different
+abundances from galaxy to galaxy. For example, oxygen we breathe here on Earth is still oxygen in a
+distant galaxy, so we can use its properties measured in a lab on Earth to figure out
+in what state it is in an observed galaxy. Since each chemical element has a
+specific atomic structure, it has a fingerprint of light emission or
+absorption that it plants in the spectra of galaxies in the form of emission or absorption spectral lines.
+The lines of some chemical species or ions are particularly 
+prominent.
+
+ Now that you know what galaxy spectra look like, we will use them to measure
+shifts of spectral lines with respect to their laboratory wavelengths. Because these shifts in most galaxies tend 
+to be towards longer wavelengths corresponding to redder color, they are called redshifts. You
+can find laboratory values for spectral features of elements in the
+table below (the wavelengths are given in units of {\AA}ngstr\"oms: $1$\AA=$10^{-8}$~cm, named after the Swedish 
+physicist Anders {\AA}ngstr\"om, one of the founders of the field of atomic spectroscopy)
+
+%http://skyserver.sdss.org/en/proj/advanced/hubble/redshifts.asp#ex16 ::
+\begin{center}
+% use packages: array
+\begin{tabular}{lc}
+\hline
+Element-Transition & Laboratory wavelength (\AA) \\ 
+\hline
+\textbf{Hydrogen:} & \\
+H$\alpha$ & 6563 \\ 
+H$\beta$  & 4861 \\ 
+H$\gamma$  & 4341 \\ 
+H$\delta$  & 4102\\
+\hline
+\textbf{Heavy elements (metals):} & \\
+Mg & 5150 \\ 
+Na  & 5892 \\
+\hline
+%what other elements?
+\end{tabular}
+\end{center}
+
+
+Different lines in the spectrum of a given element are indicated in
+greek, and roman numerals mark different ionization states, which have
+their own distinct spectral fingerprint.
+
+You will measure the redshifts of a set of some of the brightest
+galaxies in the universe, which are found in clusters. 
+Load file {\tt Hubble$\_$lab$\_$BCGs.kml} into Google Sky and click
+on $+$ in front of the folder with the same name in the left window to see 
+the list of the brightest cluster galaxies from the list in the Table given
+at the end of this document. Click on the first object in the list and Sky 
+will take you to the field showing this object. Activate the SDSS Galaxy Spectroscopy
+Layer (and switch off the SDSS Galaxy Photometric Layer), the brightest galaxy
+should be marked by a circle after the Sky queries the SDSS spectroscopic database. 
+Click on the brightest galaxy in the cluster marked by circle and
+follow the link to its spectrum in a bubble that pops up.
+Determine the redshift of each galaxy by comparing the measured
+wavelength of spectral features (absorption or emission lines) with
+the wavelength given in the table above as follows 
+
+$$ z={\lambda_{\rm obs}\over\lambda_{\rm lab}}-1$$
+
+Where $\lambda_{\rm obs}$ is the measured wavelength of the spectral
+feature and $\lambda_{\rm lab}$ is the wavelength from the ``lab''
+measurement from the table. 
+
+{\it 
+{\bf Lab tasks.}
+\begin{itemize}
+\item For each galaxy use two strong absorption lines of magnesium and sodium, labeled Mg and Na. 
+Estimate the wavelength of the lines
+following the corresponding vertical dotted line to the horizonthal $x$-axis 
+and reading off the wavelength number as accurately as you can. 
+Please, indicate the lines you used
+and provide the actual calculations of redshifts using these lines in your 
+lab report. 
+
+\item Each line gives an independent estimate of redshift. Make
+sure that they are consistent (close to each other; for example 0.171 and 0.175 are
+close but 0.05 and 0.20 are not) and then calculate the average number using 
+the two measurements and record this number to the table below.
+ The difference between redshifts from individual lines
+and the average gives you a rough measure of the error of your redshift 
+estimate, which results from the visual estimate of the observed wavelength
+$\lambda_{\rm obs}$ from the spectrum. Indicate this error along with the average number. 
+
+\item Click on the galaxy, and a popup bubble should appear containing measurements of light from the galaxy.
+ Record the galaxies apparent brightness in the $r$ band (e.g., $r=13.6062$) to the table below. 
+The $r$ band is a range of wavelengths in the red part of the spectrum. $r$ band brightness is measured by using
+a special filter that filters out light from other wavelengths.
+
+\item Describe the visual appearance of the brightest cluster galaxies and their spectra
+and interpret their color and spectra in terms of their stellar populations. 
+Do the brightest galaxies vary much in color or shape?
+\end{itemize}
+}
+
+\section{Making a Hubble Diagram}
+
+The Hubble's law of expansion relates redshift $z=\Delta\lambda/\lambda$ to the distance
+between a galaxy and us via a linear relation. The relation is commonly
+expressed in terms of the indicative velocity of recession by analogy with the Doppler wavelength
+shift we encounter every day in a sound of an ambulance or a passing train,
+\begin{equation}
+V=cz=c\Delta\lambda/\lambda,
+\label{eq:redshift}
+\end{equation}
+where $c=3\times 10^5$ km/s is the speed of light. The redshifts measured 
+for distant galaxies, however, do not actually reflect their physical motion 
+in space but rather expansion of the space itself, in which galaxies are markers of the expanding 'net'. 
+Nevertheless, the language of velocities is usually adopted for historical reasons and convenience. In these
+terms, the recession law is
+\begin{equation}
+V=H_0d,
+\label{eq:hubble}
+\end{equation}
+
+where $d$ is the distance to the galaxy and $H_0$ is the constant of
+proportionality called the Hubble constant. Since $V$ is commonly measured in
+kilometers per second, (km/s) and $d$ is commonly measured in megaparsecs,
+(Mpc), the units of $H_0$ must be km/s/Mpc (note that this is equivalent to
+units of inverse time). If we know the value of $H_0$ and we have measured the
+value of $V$ from the shift of spectral lines, we can use the above formula to
+compute the distance. Thus, our perceived scale of the universe depends on the
+value of $H_0$. 
+
+Conversely, if we assume that expansion of space have been the same in the past (i.e., the same $V$), 
+we can calculate the time it took since the moment when distances between Milky Way
+and a galaxy was zero (the moment of the Big Bang) to the present time when the distance is some value $d$: 
+$t=d/V$. Given the Hubble law $V=H_0d$, we can rewrite this as $t=d/V=1/H_0$, 
+which means that the inverse of the Hubble constant gives us an estimate of the time
+elapsed since the Big Bang or the age of the Universe. This is a rough estimate
+because modern observations show that $V$ and the Hubble constant are not constant
+in time. This estimate however is within a factor of two of the exact age. 
+
+In this part of the lab we will work with data that will allow us to verify the
+linear relation between redshift and distance, and to determine the value of
+$H_0$. We need some way to measure distances independently of the redshift. We
+will use the inverse-square law, where the measured brightness of the whole galaxy
+can be related to its distance:
+\begin{equation}
+f = {L\over 4\pi d^2},
+\label{eq:flux}
+\end{equation}
+where $L$ is the luminosity and is measured in erg/s, $d$ is
+the distance measured in cm, and $f$ is apparent brightness,
+or flux, $f$, measured in erg/s/cm$^2$.
+
+Different galaxies naturally have different
+intrinsic brightnesses (called luminosities in the following). However, Hubble
+and others showed that a recognizable class of galaxy, namely the brightest
+elliptical galaxies (typically residing in the centers of groups and 
+clusters of galaxies), has a small range of luminosity. Such
+'first-ranked' galaxies then serve as good ``standard candles'' (objects
+with known intrinsic brightness). 
+
+It is often useful to express a physical relation directly in terms of
+``observables'' --- quantities we can actually measure in
+observations. Equation~\ref{eq:hubble}, called the Hubble law of
+recession, contains the apparent recessional velocity $V$, which is
+not directly observable, and the distance $d$, which is also not
+directly observable.  However, Equations~\ref{eq:redshift} and
+\ref{eq:flux} show how to relate these quantities to the redshift $z$
+and to the flux $f$ which are directly observable. Write down the
+equation that is equivalent to Equation~\ref{eq:hubble} that is
+expressed as far as possible in terms of ``observables.''  Your
+formula should contain both $L$  and $H_0$. This tells you that an
+uncertainty in the value of $H_0$ (the scale of the universe) is
+equivalent to an uncertainty in the characteristic luminosities of
+galaxies and vice versa.
+
+There is one more formula that is needed. Astronomers like to express
+measurements of the flux in terms of magnitudes (see Chapter 1 in the
+``Universe'' textbook).  The relation between the magnitude $m$ and
+the flux expressed in cgs units is
+\begin{equation}
+m=-48.60-2.5\log_{10}(f)
+\label{eq:mag}
+\end{equation}
+
+The numerical factor 48.60 is an arbitrary zero point to the magnitude scale set
+by historical precedent. It makes the star Vega ($\alpha$ Lyr) have a magnitude
+of 0.0 at a wavelength of 5500~{\AA}. Vega is also used as the zero point for
+the B, V, R, I filter system magnitudes. For our purposes, 
+the constant factor is not important.
+
+In the last section you compiled a table of redshifts $z$ and apparent
+magnitudes for brightest cluster galaxies. We will use the symbol $m_r$ for
+r-band magnitudes to avoid confusion. It is useful to extend the Hubble diagram
+to very low redshift to increase the lever arm over which we measure $H_0$. 
+However, measuring very small redshifts using visual estimates of wavelength used
+for the BCGs is tough due to the errors of redshift estimates. Therefore, 
+we will rely, as is often done in science, on previous accurate measurement
+done by other people for the brighest cluster galaxy NGC 4472 in the nearby Virgo cluster: 
+$m_r$ = 9.97 and $z = 0.004$.
+
+ To determine the value of the Hubble constant, $H_0$, we require that one
+of the galaxies has a distance that is measured in some fashion that is
+independent of the measurement of its redshift (otherwise the argument would be
+circular). Such distance measurement is done using distance estimators
+from the previous rung of the ``distance ladder'' (e.g., Cepheid stars). 
+This is an arduous task, and its description will not be attempted
+here. The most recent measurements of the distance to NGC 4472
+(the point that should be in the lower left-hand comer of your plot) is 18.2 Mpc.
+Given the distance to NGC 4472 and its $r-$band magnitude ($m_r=9.97$), 
+you can calculate distances to any other BCG galaxy as (make sure you understand
+where this relation comes from; you can derive it from equations given above): 
+\begin{equation}
+d_{\rm BCG}=18.2\times 10^{0.2(m_r-9.97)}{\ \rm Mpc}. 
+\label{eq:dist}
+\end{equation}
+Using distance measured in such way and the redshift you measured 
+for a galaxy, you can can estimate value of $H_0$ for each of the BCGs. 
+
+{\bf Lab tasks.}
+{\it 
+\begin{enumerate}
+\item Make a plot of the data in the accompanying table, plus NGC 4472, that has
+log$_{10}z$ on the x-axis and $m_r$ on the y-axis (note that numerically
+larger values of $m_r$ correspond to fainter fluxes, {\it i.e.} greater
+distances). This plot is called the Hubble diagram. 
+From the definition of magnitude in Equation~\ref{eq:mag}, a
+difference in flux $f$ of a factor of 100 is equivalent to the difference of 5 magnitudes,
+which is what is expected for a difference in
+distance of a factor of 10 by the inverse-square law. Since we are claiming that distance is proportional
+to redshift, 5 magnitudes should also correspond to a factor of 10 in redshift.
+Draw two straight lines through the data points which you think best fit the data 
+by eye, one {\em
+including} and one {\em excluding} NGC 4472. What is the slope = $\Delta
+y/\Delta x$ that you expect if the universe is expanding uniformly? Is that what
+you have measured? \label{item:first}
+
+\item Estimate $H_0$ for a dozen BCG galaxies using redshifts you measured and
+distances calculated using equation~(\ref{eq:dist}). Average the values to get 
+an average estimate of $H_0$. 
+What is the derived value for the Hubble constant $H_0$? What is the limit for
+the age of the universe that this value implies?
+
+\item Hand in your plot with the value of the Hubble constant clearly indicated.
+Include a written discussion of the following questions: Why don't the points
+fall on precisely a straight line (give at least two possible reasons)? 
+Estimate the rough estimate of time elapsed since the Big Bang using the
+value of the Hubble constant you measured ($t=1/H_0$). 
+\end{enumerate}
+}
+
+%\newpage
+
+%http://umsdss.physics.lsa.umich.edu/catalogs/maxbcg_public_catalog.dat
+%$RA,DEC,z,bcgspecz,BCG_rlum,BCG_ilum,rlum_mem,ilum_mem,ngals,ngals_r200$
+%$239.58334,27.233419,0.102650,0.0907943,8.67289,10.7264,274.706,343.396,95,188$
+%$126.37104,47.133478,0.135050,0.128977,19.0209,24.4289,152.746,192.101,68,99$
+
+%http://xxx.lanl.gov/pdf/astro-ph/0403354v1
+
+\begin{center}
+% use packages: array
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Name & R.A. & dec & z & $m_r$ \\ \hline 
+RXCJ0747.0+4131 & 116.7537 & 41.5314 &{\hspace{1cm}} &{\ \ \ \ \ \ \ \ \ \ }\\ \hline  %& 0.0280 \\%13.61
+%RXCJ0758.4+3747 & 119.6172 & 37.7888 &{\ \ \ \ \ }&\\ \hline  %& 0.0410 \\ %************% 
+RXCJ0810.3+4216 & 122.5942 & 42.2669 &{\ \ \ \ \ }&\\ \hline %& 0.0640 \\ %********%
+%RXCJ0041.8-0918 & 10.4587 & -9.3019  &{\ \ \ \ \ }&\\ \hline  %& 0.0520 \\%
+RXCJ0809.6+3455 & 122.4177 & 34.9262 &{\ \ \ \ \  }&\\ \hline % & 0.0800 \\ %*******% 
+RXCJ0800.9+3602 & 120.2445 & 36.0469  &{\ \ \ \ \  }&\\ \hline % & 0.2880 \\%
+%RXCJ0114.9+0022 & 18.7350 & 0.3746   & &\\  %& 0.0470 \\%this is off center!%
+%RXCJ0119.6+1453 & 19.9072 & 14.8931  & &\\ %& 0.1290 \\%also hard to tell%
+%RXCJ0137.2-0912 & 24.3140 & -9.2028   %& 0.0390 \\ too hard to tell%
+%RXCJ0152.7+0100 & 28.1762 & 1.0126   & &\\ \hline  %& 0.2270 \\%
+RXCJ0736.4+3925 & 114.1540 & 39.4229  & &\\ \hline  % 114.1040 & 39.4329  %& 0.1170 \\%
+%RXCJ0753.3+2922 & 118.3291 & 29.3741 & 0.0620 \\ too hard to tell%
+%%%%%%
+%not in DR5? RXCJ0821.8+0112 & 125.4655 & 1.2116 & 0.0820 &  \\ \hline%
+RXCJ0822.1+4705 & 125.5417 & 47.0995 & &\\ \hline  % 0.1300 & 15.52\\ \hline%15.52
+%RXCJ0824.0+0326 & 126.0209 & 3.4383 & 0.3470 & 18.35\\ \hline %BCG location?
+RXCJ0825.4+4707 & 126.3652 & 47.1196 & &\\ \hline  % 0.1260 & 14.71\\ \hline %***
+RXCJ0828.1+4445 & 127.0278 & 44.7634 & &\\ \hline  % 0.1450 & 15.71\\ \hline %nicenodata
+RXCJ0842.9+3621 & 130.7401 & 36.3625 & &\\ \hline  % 0.2820 & 16.79\\ \hline %
+%RXCJ0845.3+4430 & 131.3434 & 44.5115 & &\\ \hline  % 0.0540 & 14.82\\ \hline% weak
+%RXCJ0850.1+3603 & 132.5499 & 36.0614 & &\\ \hline  % 0.3730 & 18.57\\ \hline%
+RXCJ0913.7+4056 & 138.4411 & 40.9339 & &\\ \hline  % 0.4420 & 18.14\\ \hline% crazy high z
+RXCJ0913.7+4742 & 138.4446 & 47.7021 & &\\ \hline  % 0.0510 & 14.52\\ \hline%  ***
+RXCJ0917.8+5143 & 139.4637 & 51.7223 & &\\ \hline  % 0.2170 & 16.73\\ \hline% * super rich but only 3 specs
+RXCJ0943.0+4700 & 145.7600 & 47.0038 & &\\ \hline  % 0.4060 & 19.00\\ \hline%
+%RXCJ0947.1+5428 & 146.7862 & 54.4754 & &\\ \hline  % 0.0460 & 14.17\\ \hline%
+RXCJ0952.8+5153 & 148.2009 & 51.8888 & &\\ \hline  % 0.2140 & 16.56\\ \hline%
+RXCJ0953.6+0142 & 148.4231 & 1.7118  & &\\ \hline  % 0.0980 & 14.82\\ \hline%
+RXCJ1000.5+4409 & 150.1260 & 44.1550 & &\\ \hline  % 0.1540 & 17.15\\ \hline%
+%RXCJ1013.7-0006 & 153.4368 & -0.1085 & &\\ \hline  % 0.0930 & 14.76\\ \hline%** but no bcg 
+%*RXCJ1017.5+5933 & 154.3960 & 59.5577 & &\\ \hline  % 0.2850& 17.76\\ \hline%corrected z ** but no bcg
+%RXCJ1022.5+5006 & 155.6283 & 50.1030 & &\\ \hline  % 0.1580 & 15.51\\ \hline%
+%RXCJ1023.6+0411 & 155.9125 & 4.1873 & &\\ \hline  % 0.2850  & 17.17\\ \hline%
+%RXCJ1023.6+4908 & 155.9212 & 49.1349 & &\\ \hline  % 0.1440 & 15.45\\ \hline%***
+RXCJ1053.7+5452 & 163.4349 & 54.8726 & &\\ \hline  % 0.0750 & 15.24\\ \hline%
+RXCJ1058.4+5647 & 164.6097 & 56.7922 & &\\ \hline  % 0.1360 & 15.48\\       %***
+\hline
+\end{tabular}
+\end{center}
+
+%\includegraphics[width=7in]{g0312-220.pdf}
+%\newpage
+%\includegraphics[width=7in]{g0312-255.pdf}
+%\newpage
+%\includegraphics[width=7in]{g0312-529.pdf}
+%\newpage
+%\includegraphics[width=7in,trim=1.in 0.in 0.3in 0.2in]{Template_spect2.pdf}
+%\newpage
+%\begin{center}
+%
+%\includegraphics[width=5.5in,trim=2.8in 0in -2.in 2.3in]{data.pdf}\\
+
+%\end{center}
+
+
+\end{document}

@@ -1,0 +1,122 @@
+<html>
+<title>Google Sky labs</title>
+<body>
+
+<h2>Google Sky labs</h2>
+The labs below make astronomy more accessible to students by introducing the subject through the Sky layer of Google Earth. Sky is automatically included in <a href="http://earth.google.com/download-earth.html">Google Earth</a>, and can be accessed by clicking on the Saturn Icon at the top of the application window, or by going to View->Sky in the drop-down menu.
+
+<h3>Plugins</h3>
+The Sky layer can be supplemented by user-generated plugins written in a simple markup language called KML. The plugins add interactive features, images, and call scripts that query external databases, like the <a href="http://www.sdss.org/">Sloan Digital Sky Survey (SDSS)</a>, so that students can easily engage research grade data.
+<p>
+To load a given plugin the user should start Google Earth, load Sky and then go to File->Open in the drop-down menu and browse for the file. Most plugins are only activated when the viewport stops so, after loading, you have to pan and stop again before the plugin will become active. 
+<p>
+<ul>
+<li>SDSS <a href="plugins/SDSS-gal.kml">Galaxy</a> or <a href="plugins/SDSS-star.kml">Star</a> Query Plugin -- Based on <a href="http://sky.astro.washington.edu/">Simon Krughoff's SDSS plugin</a>, it queries for galaxies or stars in the field of view from the SDSS spectroscopic and photometric database, circles them and provides information in a pop-up window, including a link to spectrum if available. 
+(Note: the Galaxy Spectrum Query in the "Galaxy Query Plugin" is currently set to return spectra for all objects in the SDSS because object identification is unreliable. From the image context it is usually clear what the spectrum pertrains to.)
+<br><a href="plugins/screenshot-SDSSgalquery.png">
+<img align="Center" valign="center" border="0" width="410" height="256" src="plugins/thumb-screenshot-SDSSgalquery.png"></a></li>
+<li>SDSS <a href="plugins/SDSS-gal-hr.kml">Galaxy Color-Magnitude</a> or <a href="plugins/SDSS-star-hr.kml">Stellar HR Diagram</a> Plugin -- Queries galaxies in the field of view from the SDSS database and displays their color-magnitude diagram.
+<br><a href="plugins/screenshot-SDSSgalcm.png"><img align="Center" valign="center" border="-1" width="410" height="256" src="plugins/thumb-screenshot-SDSSgalcm.png"></a>
+<a href="plugins/screenshot-SDSSstarhr.png"><img align="Center" valign="center" border="0" width="410" height="256" src="plugins/thumb-screenshot-SDSSstarhr.png"></a><br>
+<font size="-1">Note: popup and circled galaxies are from the Query plugin graph in left is from the HR/CMD plugins .</font></li>
+</ul>
+
+<p><br>
+
+<h3>Undergraduate Labs</h3>
+<table width="100%" cellpadding="5" border="1">
+
+<th><left><b> Labs*            </b></left><br></th>
+<th><left><b>Topics Covered</b></left><br></th>
+<th><left><b>Files Used</b></left><br></th>
+
+
+<tr>
+<td>Introduction to Google Sky 
+(<a href="labs/googleskyintro.pdf">PDF</a>/<a href="tex/googleskyintro.tex">TeX</a>)
+<br></td>
+<td><u>Basics of Sky:</u> The surveys included and a quick reference. <br>
+</td>
+<td>some <a href="places/dsph-coords.kmz">coordinates</a> <br></td>
+</tr>
+
+<tr>
+<td>The HR Diagram 
+(<a href="labs/HRdiagram.pdf">PDF</a>/<a href="tex/HRdiagram.tex">TeX</a>, <a href="tex/hippinv.eps">Image</a>)
+<br></td>
+<td><u>Stellar Populations:</u> Explore the HR Diagram of Open Clusters, Dwarf Spheroidals, and Globular Clusters in the SDSS, and of field stars in Hipparchos. <br> </td>
+<td>SDSS <a href="plugins/SDSS-star.kml">Star</a> Query, SDSS <a href="plugins/SDSS-star-hr.kml">Stellar HR Diagram</a>, <a href="plugins/Hipparcos-Stars.kml">Hipparcos Star Query</a> and <a href="plugins/Hipparcos-HR.kmz">Hipparcos-HR</a> (thanks to <a href="http://www.barnabu.co.uk/ge-plugin/">James Stafford</a>). Locations: <a href="places/open-clusters-coords.kmz">Open Clusters</a>, <a href="places/dsph-coords.kmz">Dwarf Spheroidals</a>, and <a href="places/globular-clusters-coords.kmz">Globular Clusters</a>. <br></td>
+</tr>
+
+<tr>
+<td> Morphological Types, Spectra of Galaxies, and the Hubble Expansion Law
+(<a href="labs/hubblelab.pdf">PDF</a>/<a href="tex/hubblelab.tex">TeX</a>)
+<br></td>
+<td><u>Constructing the Hubble Diagram:</u> Measure distance from Brightest Cluster Galaxy photometry, and redshifts from galaxy spectrum. <br>
+<u>Homogeneity of Space:</u> Show that Galaxy counts are a Poisson distribution on large enough scales.*NOTE, scales listed in the lab are currently actually too small to see Poisson statistics. <br>
+<u>Understanding Spectra:</u> Explore the general shape of spectra for various morphological types. <br></td>
+<td><a href="plugins/SDSS-gal-noz.kml">SDSS Galaxy Query w/o redshifts displayed</a>. <br>
+Locations: <a href="places/Hubble_lab_BCGs.kmz">BCGs</a> and <a href="places/Hubble_lab_random_SDSS_fields.kml">random fields</a> <br></td>
+</tr>
+<!--tr>
+<td><font color="Gray">The Hubble Law: Studying Homogeneity with Magnitude Limits</font>
+(<a href="labs/.pdf">PDF</a>/<a href="tex/.tex">TeX</a>)
+<br></td>
+<td><u></u> <font color="Gray">Under Development: to be implemented as an extension of the Hubble Lab<br>
+ <br></td>
+<td><a href="plugins/SDSS-gal-rbins.kml">SDSS Galaxy Query by R-Magnitude Bins</a> <br></td>
+</tr-->
+
+<tr>
+<td>Galaxy environments, clusters of galaxies, and dark matter
+(<a href="labs/clusterlab.pdf">PDF</a>/<a href="tex/clusterlab.tex">TeX</a>)
+<br></td>
+<td><u>Galaxy Environments:</u> Field galaxies, cluster properties and cluster finding  <br> </td>
+<td><a href="plugins/SDSS-gal.kml">SDSS Galaxy Query</a> and <a href="plugins/SDSS-gal-hr.kml">Galaxy Color-Magnitude Diagram</a>. 
+Locations:  <a href="places/Cluster_lab_Clusters.kmz">Clusters</a>, <a href="places/Cluster_lab_Groups.kmz">Groups</a>, and  <a href="places/Hubble_lab_random_SDSS_fields.kml">Fields (same fields as hubble lab)</a>,  
+
+ <br></td>
+</tr>
+
+<tr>
+</tr>
+<!--tr>
+<td><font color="Gray">QSOs and Stars</font>
+(<a href="labs/qso.pdf">PDF</a>/<a href="tex/qso.tex">TeX</a>)
+<br></td>
+<td><font color="Gray"><u>QSO Spectra:</u> Lab Under Development<br>
+ <br></td>
+<td><a href="plugins/SDSS-qso.kml">SDSS QSO/Star Spectra Query</a> <br></td>
+</tr-->
+
+<!--tr>
+<td><font color="Gray">Supernova Light Curves</font>
+(<a href="labs/.pdf">PDF</a>/<a href="tex/.tex">TeX</a>)
+<br></td>
+<td><font color="Gray"><u></u> Lab and Plugins Under Development<br>
+ <br></td>
+<td><a href="plugins/.kml">plugins under development</a> <br></td>
+</tr-->
+
+</table>
+<i>*Labs were assembled by Sam Leitner in collaboration with Andrey Kravtsov and Mike Gladders. </i>
+
+<p><br>
+<h3>Documentation for developers</h3>
+<ul>
+<li> <a href="http://github.com/sleitner/gskylabs/scripts/">This repository</a>  contains scripts that generate KML plugins via SQL queries to SDSS</li>
+<li>The following GET request queries SDSS for objects within the SDSS footprint: http://<insert-web-address>/query-gal-hr.pl?BBOX=-33.05,25.00,-33.00,25.05 <br>To debug output in a specific region use "west,south,east,north" position arguments that Sky passes to scripts -- these correspond to the Declination (Dec) and the Right Ascension (RA) minus 180 degrees. 
+</li>
+
+<li>Check <a href="http://kmlvalidator.com"> that your KML is strictly compliant</a>. KML can be interpretted properly in Sky, but still be unstable to upgrades.</li>
+<li> <a href="http://code.google.com/apis/kml/documentation/">KML tutorial for Google Earth</a></li>
+<li> <a href="http://sky.astro.washington.edu/"> Sky layer examples</a> </li>
+</ul>
+<p><br>
+<hr>
+<font size="-1">
+These efforts are funded by the University of Chicago and the <a href="http://kicp.uchicago.edu/">Kavli Institute for Cosmological Physics</a>.
+</font><br>
+<p>
+</body>
+</html>

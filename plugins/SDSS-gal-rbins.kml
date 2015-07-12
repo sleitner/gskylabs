@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" hint="target=sky">
+<Folder>
+	<name>SDSS Galaxy Query Layers</name>
+	<open>1</open>
+	<Folder>
+		<name>rmag=16-17, (white)SDSS Galaxy Photometric Layer</name>
+		<open>0</open>
+		<description>Query brightest (DR7) galaxies with 16>r>17 </description>
+		<NetworkLink>
+			<name>rmag=16-17, SDSS Objects</name>
+			<description>Queried when the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-gal-phot-rlims.pl?MLIM=16,17+</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>.5</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+	<Folder>
+		<name>rmag=17-18, (yellow)SDSS Galaxy Photometric Layer</name>
+		<open>0</open>
+		<description>Query brightest (DR7) galaxies with 17>r>18 </description>
+		<NetworkLink>
+			<name>rmag=17-18, SDSS Objects</name>
+			<description>Queried when the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-gal-phot-rlims.pl?MLIM=17,18+</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>0.75</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+	<Folder>
+		<name>rmag=18-19, (green)SDSS Galaxy Photometric Layer</name>
+		<open>0</open>
+		<description>Query brightest (DR7) galaxies with 18>r>19 </description>
+		<NetworkLink>
+			<name>rmag=18-19, SDSS Objects</name>
+			<description>Queried when the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-gal-phot-rlims.pl?MLIM=18,19+</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>1.0</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+	<Folder>
+		<name>rmag=19-20, (blue)SDSS Galaxy Photometric Layer</name>
+		<open>0</open>
+		<description>Query brightest (DR7) galaxies with 19>r>20 </description>
+		<NetworkLink>
+			<name>rmag=19-20, SDSS Objects</name>
+			<description>Queried when the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-gal-phot-rlims.pl?MLIM=19,20+</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>1.5</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+	<Folder>
+		<name>rmag=20-21, (red)SDSS Galaxy Photometric Layer</name>
+		<open>0</open>
+		<description>Query brightest (DR7) galaxies with 19>r>20 </description>
+		<NetworkLink>
+			<name>rmag=20-21, SDSS Objects</name>
+			<description>Queried when the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-gal-phot-rlims.pl?MLIM=20,21+</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>1.5</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+</Folder>
+</kml>

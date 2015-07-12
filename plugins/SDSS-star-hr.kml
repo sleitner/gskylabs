@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" hint="target=sky">
+<!--<Folder>
+	<name>SDSS Query Layers</name>
+	<open>1</open>
+	<Folder>
+		<name>SDSS Photometric Query Layer</name>
+		<open>1</open>
+		<description>Layer to query brightest objects from data release 7 (DR7)</description>
+		<NetworkLink>
+			<name>Photo Objects</name>
+			<description>The database is queried when the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-star-phot.pl?</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>1.5</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+	<Folder>
+		<name>SDSS Spectroscopic Query Layer</name>
+		<description>Layer to query brightest spectroscopic objects from data release 7 (DR7)</description>
+		<NetworkLink>
+			<name>Spec Objects</name>
+			<open>1</open>
+			<description>The database is queried when the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-star-spec.pl?</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>2.5</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder> -->
+	<Folder>
+		<name>Color Magnitude Layer</name>
+		<description>Layer to plot HR diagram of the 100 brightest stars from data release 7 (DR7)</description>
+		<Style>
+			<ListStyle>
+				<listItemType>checkHideChildren</listItemType>
+				<bgColor>00ffffff</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+		</Style>
+		<ScreenOverlay>
+		<name>Color Magnitude Chart</name>
+			 <drawOrder>1</drawOrder>
+			<Icon>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/images/chart-stars2.gif</href>
+			</Icon>
+			<overlayXY x="0" y="1" xunits="fraction" yunits="fraction"/>
+			<screenXY x="0" y="1" xunits="fraction" yunits="fraction"/>
+			<rotationXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<size x="0" y="0" xunits="fraction" yunits="fraction"/>
+		</ScreenOverlay>
+		<Style id="so">
+                	<BalloonStyle>
+                        	<text>$[description]</text>
+                        	<bgColor>ffe0e0e0</bgColor>
+                	</BalloonStyle>
+        	</Style>
+		<NetworkLink>
+		<name>Color Magnitude Points</name>
+			<open>1</open>
+			<description>The database is queried when the viewport stops.</description>-->
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-star-hr.pl?</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>0.5</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+<!--</Folder>-->
+</kml>

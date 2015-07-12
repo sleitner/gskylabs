@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" hint="target=sky">
+<Folder>
+	<name>SDSS Galaxy Query Layers (NO Z)</name>
+	<open>1</open>
+	<Folder>
+		<name>SDSS Galaxy Photometric Layer (no redshift) </name>
+		<open>1</open>
+		<description>Layer to query top 100 brightest objects from data release 5 (DR5)</description>
+		<NetworkLink>
+			<name>SDSS Objects</name>
+			<description>The database is queried any time the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-gal-phot-noz.pl?</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>.75</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+	<Folder>
+		<name>SDSS Galaxy Spectroscopic Layer (no redshift) </name>
+		<description>Layer to query top 100 brightest spectroscopic objects from data release 5 (DR5)</description>
+		<NetworkLink>
+			<name>SDSS Objects</name>
+			<open>1</open>
+			<description>The database is queried any time the viewport stops.</description>
+			<Link>
+				<href>http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-gal-spec-noz.pl?</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>1.5</viewRefreshTime>
+			</Link>
+		</NetworkLink>
+	</Folder>
+</Folder>
+</kml>

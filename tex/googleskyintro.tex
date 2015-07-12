@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+%\usepackage{mipsections}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{array}
+\setlength{\textwidth}{6.5 in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textheight}{9 in}
+\newlength{\newheadsep}
+\setlength{\newheadsep}{0.5in}
+\setlength{\headheight}{\normalbaselineskip}
+\addtolength{\newheadsep}{-\headheight}
+\setlength{\headsep}{\newheadsep}
+\setlength{\topmargin}{-0.5in}
+
+
+\begin{document}
+\vspace*{-.7in}
+\rightline{\tiny PS12000 Winter 2003 V1.1}
+\vspace{.7in}
+\centerline{\large\bf Introduction to Google Sky and the Sloan Digital Sky Survey}
+\vspace{.2in}
+
+
+\section*{Background}
+Google has compiled a number of astronomical surveys into a very intuitive database that we'll be using for labs. Google is not responsible for conducting any of these surveys, rather, telescopes make their image data publicly available and Google pieces those images together in their application. To see how this works go to \texttt{www.google.com/sky} , click on \texttt{Hubble Showcase} and choose an interesting picture at the bottom of the screen. You'll see a hubble image overlayed on top of a lower resolution survey. You can zoom in and out of the image and pan across the sky in the same way you would using google maps. 
+
+A slightly more powerful version of the online Google Sky is embedded in the Google Earth application. Earth is free to download at \texttt{http://earth.google.com/} and easy to install on any operating system. In order to activate ``sky mode`` click the \texttt{saturn icon} in the top bar of the main screen or go to \texttt{view -> switch to sky}. Earth has the same capabilities, but you'll be able to load some neat plugins that are integral to the labs you'll be doing. You are encouraged to install Earth on your home computer, and contact the TAs if you run into any difficulties. 
+
+The images you'll be looking at in Sky are some of the best available. They are the subject of numerous papers and truly cutting edge research. We hope that this application will lead to a more dynamic and fun lab experience as you zoom through the most detailed images astronomy has to offer.
+
+\subsection*{Origin of the Data}
+Most of the data we'll use for these labs comes from the Sloan Digital Sky Survey (SDSS), a survey lead by researchers at UChicago. The SDSS has mapped out large portions of the sky to determine the positions and distances of the closest million galaxies. The portion of the sky that SDSS has surveyed is visible in google sky, as a brighter section of strips at the lowest zoom. Find this region. What percent of the sky is covered by the SDSS? Why might these strips be brighter than strips from other surveys? Why does the SDSS not observe the whole sky? 
+
+Take a closer look at a random field in the SDSS and a typical field outside of the SDSS footprint. Contrast the images. The images in regions not covered by SDSS are mostly from a survey created using photographic plates and from much smaller aperture telescopes. What features of a telescope might affect the quality of images produced and why?
+
+\noindent
+\textit{Extended Topics}: 
+Technical Issues in the SDSS -- 
+Discuss bright stars and object identification in the photometric/spectroscopic catalogs using the \texttt{SDSS Query Plugins}.
+Also, note the SDSS filter system, and why it results in streaks of different colors for moving objects like comets.
+
+
+\section*{Using Sky}
+
+
+\textbf{Loading Plugin or Coordinate files:} \newline
+\noindent In the dropdown menu click \texttt{file->open->} and browse to the .kml or .kmz file you need and click \texttt{open}. This should load the file into the \texttt{Places} frame on the left. Unchecking/checking the box next to the name of the plugin deactivates/activates it. If you loaded a set of coordinates click the \texttt{+} next to the coordinate's label and then double click on one of the coordinates to be brought to that position. 
+
+
+
+\noindent \textbf{Going to a Position or Object:} \newline
+If you don't have a coordinate file, you can still go to specific positions in the sky. Two measures of your angular position on the sky are the Right Ascension (RA) and Declination (Dec). The position of your mouse is given in RA and dec at the bottom of the screen. To go to a specific RA and Dec click the \texttt{Location Search} tab in the upper left of your screen. Many of the brightest nearby objects are named with ``Messier'' (M81) or ``NGC'' (NGC5055) numbers. If you know the name of the object you can also just enter it in the to left white bar in the \texttt{Search the Sky} tab.
+
+\textit{Extended Topic:} Excersises about RA/Dec, hours/degrees and angular scales.
+
+\noindent \textbf{Trouble Shooting:} \newline
+Occasionally a glitch may occur, these are usually solved by reloading the plugin, activating/reactivating or, in the case of a crash, restarting Sky altogether.
+If none of these work, try loading a similar plugin (e.g. another query plugin). If those are not working either, then the server may be down at uchicago or the SDSS. 
+To check the uchicago server \texttt{http://astrowiki.uchicago.edu/~sleitner/GS/cgi-bin/query-star-phot.pl?} -- if it's working you will get message that says ``KML sample''. If our server is down contact Sam Leitner and talk to Leo, or Valeri right away. 
+You can also check whether the SDSS server is online by going to \texttt{http://cas.sdss.org/astro/en/tools/search/sql.asp} 
+
+
+
+
+
+
+\end{document}
